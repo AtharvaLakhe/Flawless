@@ -4,7 +4,7 @@ import HowItWorksSection from "@/components/how-it-works-section";
 import VerdictSection from "@/components/verdict-section";
 import GateSection from "@/components/gate-section";
 import CloseSection from "@/components/close-section";
-import Dither from "@/components/Dither";
+import {AnalyzeAnimation} from "@/components/AITriangleAnimation";
 
 export default function Home() {
     return (
@@ -17,17 +17,7 @@ export default function Home() {
                         WebkitMaskImage: "linear-gradient(to bottom, black 0%, black calc(100% - 140px), transparent 100%)",
                     }}
                 >
-                    <Dither
-                        waveColor={[0.30980392156862746, 0.30980392156862746, 0.30980392156862746]}
-                        disableAnimation={false}
-                        enableMouseInteraction
-                        mouseRadius={0.3}
-                        colorNum={4}
-                        pixelSize={2}
-                        waveAmplitude={0.3}
-                        waveFrequency={3}
-                        waveSpeed={0.05}
-                    />
+                    <AnalyzeAnimation shape="triangle" />
                 </div>
                 <div className="relative z-10">
                     <HeroSection/>
@@ -40,4 +30,4 @@ export default function Home() {
             <CloseSection/>
         </>
     )
-}
+}

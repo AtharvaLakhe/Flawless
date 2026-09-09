@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
-import {Menu, ShieldCheck, X} from 'lucide-react'
+import Image from 'next/image'
+import {Menu, X} from 'lucide-react'
 import {Button} from '@/components/ui/button'
 import React from 'react'
 
@@ -25,10 +26,13 @@ export const HeroHeader = () => {
                                 href="/"
                                 aria-label="home"
                                 className="flex items-center space-x-2">
-                                <span
-                                    className="flex size-8 items-center justify-center rounded-lg bg-foreground text-background">
-                                    <ShieldCheck className="size-5"/>
-                                </span>
+                                <Image
+                                    src="/logo.png"
+                                    alt="Flawless logo"
+                                    width={32}
+                                    height={32}
+                                    className="size-8 invert"
+                                />
                                 <span className="font-mono text-lg font-semibold tracking-tight">Flawless</span>
                             </Link>
 

@@ -25,3 +25,6 @@ yarn-error.log*
 Thumbs.db
 .idea/
 .vscode/
+
+# Local tooling
+.freebuff/
