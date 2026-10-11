@@ -1,5 +1,7 @@
 # Flawless — AI Security Release Gate
 
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Release gate](https://img.shields.io/badge/CI-release_gate-111111?logo=githubactions&logoColor=white) ![Last commit](https://img.shields.io/github/last-commit/AtharvaLakhe/Flawless) ![Stars](https://img.shields.io/github/stars/AtharvaLakhe/Flawless?style=flat)
+
 Your pipeline already runs the scanners. Flawless reads everything they find, ranks what's actually dangerous, and decides whether this release is safe to ship — automatically.
 
 ## How it works
